@@ -28,8 +28,9 @@ public class ProviderConfig {
     @Bean
     public ProtocolConfig protocolConfig(@Value("${dubbo.protocol.port}")Integer port, @Value("${dubbo.protocol.name}") String name){
         ProtocolConfig protocolConfig = new ProtocolConfig();
-        protocolConfig.setName(name);
-        protocolConfig.setPort(port);
+        protocolConfig.setName(name);//协议名称
+        protocolConfig.setPort(port);//端口
+        protocolConfig.setAccepts(5000);//设置最大连接数
         return protocolConfig;
     }
 }
