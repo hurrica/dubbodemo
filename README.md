@@ -14,7 +14,6 @@
 		
 
 * Consumer和provider之间的连接是持续性的，一旦服务断开，注册中心就能检测出来并通知消费者，那么是如何做到的呢？
-
- 答案是注册中心，dubbo依赖于zookeeper注册中心，zookeeper有四种节点类型，dubbo使用的是zookeeper的临时节点，dubbo将服务注册到zookeeper的临时节点，消费者订阅服务的时候会在该节点上注册一个watch，如果该节点有改动，则会通过zookeeper的事件通知到消费者
+答案是注册中心，dubbo依赖于zookeeper注册中心，zookeeper有四种节点类型，dubbo使用的是zookeeper的临时节点，dubbo将服务注册到zookeeper的临时节点，消费者订阅服务的时候会在该节点上注册一个watch，如果该节点有改动，则会通过zookeeper的事件通知到消费者
 
 	
