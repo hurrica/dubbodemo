@@ -35,6 +35,7 @@
 * 主key为服务名和类型
 * Map中的key为url地址
 * Map中的value为过期时间，用于判断脏数据
+
 使用redis的pub/sub事件通知数据变更
 
 4、simple。simple注册中心本身是一个普通的dubbo服务，可以减少第三方依赖，使整体通讯方式一致。SimpleRegistryService 只是简单实现，不支持集群，可作为自定义注册中心的参考，不适合用于生产环境
