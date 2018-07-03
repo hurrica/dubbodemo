@@ -1,12 +1,12 @@
 package com.ping.chen.dubbo.provider.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.ping.chen.dubbo.service.DemoService;
-import org.springframework.stereotype.Service;
 
 /**
  * Created by ping.chen on 2018/7/1.
  */
-@Service
+@Service(timeout = 5000, retries = 0)
 public class DemoServiceImpl implements DemoService {
 
     @Override
