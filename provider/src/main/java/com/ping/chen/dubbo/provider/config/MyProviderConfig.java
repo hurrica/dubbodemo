@@ -2,13 +2,21 @@ package com.ping.chen.dubbo.provider.config;
 
 import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.ProtocolConfig;
+import com.alibaba.dubbo.config.ProviderConfig;
 import com.alibaba.dubbo.config.RegistryConfig;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class ProviderConfig {
+public class MyProviderConfig {
+
+    @Bean
+    public ProviderConfig providerConfig(){
+        ProviderConfig providerConfig = new ProviderConfig();
+
+        return providerConfig;
+    }
 
     @Bean
     public ApplicationConfig applicationConfig(){

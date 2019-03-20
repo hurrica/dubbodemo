@@ -3,6 +3,7 @@ package com.ping.chen.dubbo.provider;
 import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -11,9 +12,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 @SpringBootApplication
 @DubboComponentScan("com.ping.chen.dubbo.provider.service.impl")
 public class ProviderApplication {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         System.setProperty("spring.config.location", "classpath:provider.properties");
         SpringApplication.run(ProviderApplication.class, args);
-        System.in.read();
     }
 }

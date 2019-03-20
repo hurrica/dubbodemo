@@ -10,5 +10,7 @@
     <dubbo:registry address="zookeeper://192.168.4.238:2181"/>
 
     <!--  依赖的服务  -->
-    <dubbo:reference cache="lru" id="demoService" interface="com.ping.chen.dubbo.service.DemoService" timeout="10000"/>
+    <dubbo:reference cache="lru" id="demoService" interface="com.ping.chen.dubbo.service.DemoService" timeout="5000">
+        <dubbo:method name="sayHello" async="true"/>
+    </dubbo:reference>
 </beans>

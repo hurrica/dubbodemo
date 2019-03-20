@@ -15,7 +15,7 @@ public class DemoServiceImpl implements DemoService {
     @Override
     public String sayHello(String name) {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(5500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
