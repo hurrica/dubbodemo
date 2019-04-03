@@ -1,32 +1,31 @@
 package com.ping.chen.dubbo.comsumer;
 
-import com.ping.chen.dubbo.service.DemoService;
+import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
+import com.alibaba.dubbo.rpc.RpcContext;
+import com.ping.chen.dubbo.provider.DemoProvider;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import java.util.concurrent.ExecutionException;
 
 /**
  * Created by ping.chen on 2018/7/1.
  */
 @SpringBootApplication
+@DubboComponentScan("com.ping.chen.META-INF.comsumer")
 public class ConsumerApplication {
-    public static void main(String[] args) throws Exception {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-                new String[]{"consumer.xml"});
-        context.start();
+
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+        ConfigurableApplicationContext context = SpringApplication.run(ConsumerApplication.class, args);
+
         // obtain proxy object for remote invocation
-        DemoService demoService = (DemoService) context.getBean("demoService");
+        DemoProvider demoProvider = (DemoProvider) context.getBean(DemoProvider.class);
         // execute remote invocation
         System.out.println("-----------------------------------------------------------------------");
-        long startTime = System.currentTimeMillis();
-        System.out.println("ready to request");
-        String hello = demoService.sayHello("world");
-        Long endTime = System.currentTimeMillis();
-        System.out.println(hello);
-        System.out.println("time1: " + (endTime-startTime));
-
-        System.out.println(demoService.sayHello("ping"));
-        System.out.println(System.currentTimeMillis() - endTime);
+        System.out.println(demoProvider.sayHello("world"));
+        String result = (String) RpcContext.getContext().getFuture().get();
+        System.out.println(result);
         System.out.println("-----------------------------------------------------------------------");
-
     }
 }

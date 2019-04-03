@@ -1,7 +1,7 @@
 package com.ping.chen.dubbo.provider.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.ping.chen.dubbo.service.DemoService;
+import com.ping.chen.dubbo.provider.DemoProvider;
 
 /**
  * Created by ping.chen on 2018/7/1.
@@ -9,13 +9,13 @@ import com.ping.chen.dubbo.service.DemoService;
  * actives 每个消费者最大并发调用数
  *
  */
-@Service(timeout = 5000, retries = 1, version = "1.0", loadbalance = "random", actives = 10)
-public class DemoServiceImpl implements DemoService {
+@Service(interfaceClass = DemoProvider.class)
+public class DemoProviderImpl implements DemoProvider {
 
     @Override
     public String sayHello(String name) {
         try {
-            Thread.sleep(5500);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
