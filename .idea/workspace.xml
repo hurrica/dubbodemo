@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1010e9f6-c770-40d7-bcb7-d7499d926f96" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/config/ConfigClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/controller/DemoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/filter/MyConsumerFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comsumer/src/main/resources/META-INF/dubbo/com.alibaba.dubbo.rpc.Filter" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comsumer/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/config/ConfigClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/resources/provider.xml" afterDir="false" />
+    <list default="true" id="1010e9f6-c770-40d7-bcb7-d7499d926f96" name="Default" comment="spi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comsumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comsumer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/ConsumerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/test/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/test/invoke/TestService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/filter/MyConsumerFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/filter/MyConsumerFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comsumer/src/main/resources/consumer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comsumer/src/main/resources/consumer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comsumer/target/classes/com/ping/chen/dubbo/comsumer/ConsumerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/comsumer/target/classes/com/ping/chen/dubbo/comsumer/ConsumerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comsumer/target/classes/consumer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comsumer/target/classes/consumer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/ProviderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/ProviderApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/config/MyProviderConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/service/impl/DemoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/service/impl/DemoProviderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/resources/provider.properties" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/resources/provider.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/ping/chen/dubbo/provider/ProviderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/ping/chen/dubbo/provider/ProviderApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/ping/chen/dubbo/provider/service/impl/DemoServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/ping/chen/dubbo/service/DemoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/ping/chen/dubbo/provider/DemoProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/resources/provider.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/resources/provider.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,13 +23,13 @@
     <session id="1410493425">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
-          <entry key="project.open.time.1" value="4" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -54,39 +37,40 @@
           <entry key="Filter" value="11" />
           <entry key="class" value="31" />
           <entry key="filter" value="1" />
-          <entry key="java" value="326" />
+          <entry key="java" value="330" />
           <entry key="md" value="1" />
           <entry key="properties" value="15" />
           <entry key="versionsBackup" value="2" />
-          <entry key="xml" value="30" />
+          <entry key="xml" value="31" />
           <entry key="xsd" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="31" />
-          <entry key="JAVA" value="326" />
+          <entry key="JAVA" value="330" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="Properties" value="15" />
-          <entry key="XML" value="33" />
+          <entry key="XML" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Filter" value="37" />
           <entry key="dummy" value="12" />
-          <entry key="java" value="738" />
+          <entry key="java" value="764" />
           <entry key="properties" value="22" />
-          <entry key="xml" value="268" />
+          <entry key="txt" value="6" />
+          <entry key="xml" value="269" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="738" />
-          <entry key="PLAIN_TEXT" value="49" />
+          <entry key="JAVA" value="764" />
+          <entry key="PLAIN_TEXT" value="55" />
           <entry key="Properties" value="22" />
-          <entry key="XML" value="268" />
+          <entry key="XML" value="269" />
         </counts>
       </usages-collector>
     </session>
@@ -96,10 +80,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/filter/MyConsumerFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="16" column="104" selection-start-line="16" selection-start-column="104" selection-end-line="16" selection-end-column="104" />
+            <state relative-caret-position="97">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/controller/DemoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="18" column="16" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comsumer/src/main/resources/consumer.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/ConsumerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#646#647#0" expanded="true" />
+                <element signature="e#716#717#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,8 +127,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/provider/src/main/resources/provider.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+            <state relative-caret-position="251">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -117,8 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/service/impl/DemoProviderImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="209">
+              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -129,7 +148,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://D:/Java/repository/maven/com/alibaba/dubbo/2.6.1/dubbo-2.6.1-sources.jar!/com/alibaba/dubbo/common/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
+            <state relative-caret-position="5035">
               <caret line="281" column="31" selection-start-line="281" selection-start-column="31" selection-end-line="281" selection-end-column="31" />
             </state>
           </provider>
@@ -193,19 +212,19 @@
         <option value="$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/config/ConfigClass.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/ping/chen/dubbo/provider/DemoService.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/ping/chen/dubbo/provider/DemoProvider.java" />
-        <option value="$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/service/impl/DemoProviderImpl.java" />
         <option value="$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/ProviderApplication.java" />
-        <option value="$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/ConsumerApplication.java" />
         <option value="$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/controller/DemoController.java" />
         <option value="$PROJECT_DIR$/comsumer/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter" />
         <option value="$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/filter/ConsumerFilter.java" />
         <option value="$PROJECT_DIR$/comsumer/src/main/resources/META-INF.dubbo/org.apache.dubbo.rpc.Filter" />
-        <option value="$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/filter/MyConsumerFilter.java" />
         <option value="$PROJECT_DIR$/comsumer/pom.xml" />
-        <option value="$PROJECT_DIR$/comsumer/src/main/resources/consumer.xml" />
         <option value="$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/filter/MyConsumerFilter.java" />
         <option value="$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/filter/MyFilter.java" />
         <option value="$PROJECT_DIR$/provider/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter" />
+        <option value="$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/filter/MyConsumerFilter.java" />
+        <option value="$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/ConsumerApplication.java" />
+        <option value="$PROJECT_DIR$/comsumer/src/main/resources/consumer.xml" />
+        <option value="$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/service/impl/DemoProviderImpl.java" />
         <option value="$PROJECT_DIR$/provider/src/main/resources/provider.xml" />
       </list>
     </option>
@@ -332,8 +351,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -417,36 +434,6 @@
             <path>
               <item name="dubbodemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="dubbodemo" type="462c0819:PsiDirectoryNode" />
-              <item name="comsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbodemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbodemo" type="462c0819:PsiDirectoryNode" />
-              <item name="comsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbodemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbodemo" type="462c0819:PsiDirectoryNode" />
-              <item name="comsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbodemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbodemo" type="462c0819:PsiDirectoryNode" />
-              <item name="comsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbodemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbodemo" type="462c0819:PsiDirectoryNode" />
               <item name="provider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -478,6 +465,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbodemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbodemo" type="462c0819:PsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dubbodemo" type="b2602c69:ProjectViewProjectNode" />
@@ -506,13 +503,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="DubboI&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker&#10;ContextFilter&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.filter.ContextFilter&#10;com.alibaba.dubbo.registry.RegistryService&#9;PSI&#9;JAVA://com.alibaba.dubbo.registry.RegistryService&#10;invocation&#9;FILE&#9;jar://D:/Java/repository/maven/com/alibaba/dubbo/2.6.1/dubbo-2.6.1-sources.jar!/com/alibaba/dubbo/rpc/proxy/InvokerInvocationHandler.java&#10;MockClusterInvoker&#9;FILE&#9;jar://D:/Java/repository/maven/com/alibaba/dubbo/2.6.1/dubbo-2.6.1-sources.jar!/com/alibaba/dubbo/rpc/cluster/support/wrapper/MockClusterInvoker.java&#10;InvokerInvocationHandler&#9;FILE&#9;jar://D:/Java/repository/maven/com/alibaba/dubbo/2.6.1/dubbo-2.6.1-sources.jar!/com/alibaba/dubbo/rpc/proxy/InvokerInvocationHandler.java&#10;AbstractLoadBalance&#9;FILE&#9;jar://D:/Java/repository/maven/com/alibaba/dubbo/2.6.1/dubbo-2.6.1-sources.jar!/com/alibaba/dubbo/rpc/cluster/loadbalance/AbstractLoadBalance.java&#10;FailbackClusterInvoker&#9;FILE&#9;jar://D:/Java/repository/maven/com/alibaba/dubbo/2.6.1/dubbo-2.6.1-sources.jar!/com/alibaba/dubbo/rpc/cluster/support/FailbackClusterInvoker.java&#10;ForkingClusterInvoker&#9;FILE&#9;jar://D:/Java/repository/maven/com/alibaba/dubbo/2.6.1/dubbo-2.6.1-sources.jar!/com/alibaba/dubbo/rpc/cluster/support/ForkingClusterInvoker.java&#10;FailoverCluster&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.support.FailoverCluster&#10;ConditionRou&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.router.condition.ConditionRouter&#10;Directory&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.Directory&#10;ReferenceBean&#9;FILE&#9;jar://D:/Java/repository/maven/com/alibaba/dubbo/2.6.1/dubbo-2.6.1-sources.jar!/com/alibaba/dubbo/config/spring/ReferenceBean.java&#10;referenceBean&#9;PSI&#9;JAVA://com.alibaba.dubbo.config.spring.ReferenceBean&#10;ServiceBean&#9;PSI&#9;JAVA://com.alibaba.dubbo.config.spring.ServiceBean" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554293848371" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554344114399" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -722,9 +721,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.ConsumerApplication" />
       <item itemvalue="Application.ConsumerApplication" />
       <item itemvalue="Application.ProviderApplication" />
-      <item itemvalue="Spring Boot.ConsumerApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -765,6 +764,7 @@
       <workItem from="1551351877187" duration="4587000" />
       <workItem from="1552102388679" duration="5545000" />
       <workItem from="1552908966903" duration="5076000" />
+      <workItem from="1554294704299" duration="2227000" />
     </task>
     <task id="LOCAL-00001" summary="使用注解配置">
       <created>1530590762328</created>
@@ -773,11 +773,18 @@
       <option name="project" value="LOCAL" />
       <updated>1530590762328</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="spi">
+      <created>1554293900185</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554293900185</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132192000" />
+    <option name="totallyTimeSpent" value="134636000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -790,9 +797,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31996974" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32526475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -803,15 +809,15 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32820514" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4991453" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.61880344" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2974359" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2752137" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32962587" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32962587" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.2888889" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.15726496" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.23037542" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
@@ -874,7 +880,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="使用注解配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用注解配置" />
+    <MESSAGE value="spi" />
+    <option name="LAST_COMMIT_MESSAGE" value="spi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -884,18 +891,6 @@
           <line>88</line>
           <properties />
           <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/filter/MyConsumerFilter.java</url>
-          <line>17</line>
-          <properties />
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/filter/MyConsumerFilter.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -914,23 +909,7 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/config/MyProviderConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-98">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/filter/DubboSyncFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/filter/DubboSyncFilter.java" />
     <entry file="file://$PROJECT_DIR$/comsumer/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1091,13 +1070,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comsumer/src/main/resources/META-INF/dubbo/com.alibaba.dubbo.rpc.Filter">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1386" />
@@ -1110,16 +1082,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comsumer/target/classes/META-INF.dubbo/org.apache.dubbo.rpc.Filter">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comsumer/target/classes/META-INF/filter/org.apache.dubbo.rpc.Filter">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/comsumer/target/classes/META-INF.dubbo/org.apache.dubbo.rpc.Filter" />
+    <entry file="file://$PROJECT_DIR$/comsumer/target/classes/META-INF/filter/org.apache.dubbo.rpc.Filter" />
     <entry file="jar://D:/Java/repository/maven/com/alibaba/dubbo/2.6.1/dubbo-2.6.1-sources.jar!/com/alibaba/dubbo/rpc/protocol/dubbo/DubboProtocol.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59">
@@ -1148,23 +1112,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/provider/src/main/resources/dubbo/org.apache.dubbo.rpc.Filter">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/filter/MyFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="43" selection-start-column="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" selection-start-column="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/provider/src/main/resources/dubbo/org.apache.dubbo.rpc.Filter" />
+    <entry file="file://$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/filter/MyFilter.java" />
+    <entry file="file://$PROJECT_DIR$/provider/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter" />
     <entry file="file://$PROJECT_DIR$/provider/src/main/resources/provider.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -1207,30 +1157,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/ConsumerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Java/repository/maven/com/alibaba/dubbo/2.6.1/dubbo-2.6.1-sources.jar!/com/alibaba/dubbo/rpc/protocol/dubbo/DubboInvoker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="86" column="53" selection-start-line="86" selection-start-column="53" selection-end-line="86" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/controller/DemoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1247,32 +1177,68 @@
     </entry>
     <entry file="jar://D:/Java/repository/maven/com/alibaba/dubbo/2.6.1/dubbo-2.6.1-sources.jar!/com/alibaba/dubbo/common/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="5035">
           <caret line="281" column="31" selection-start-line="281" selection-start-column="31" selection-end-line="281" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comsumer/src/main/resources/consumer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/filter/MyConsumerFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="16" column="104" selection-start-line="16" selection-start-column="104" selection-end-line="16" selection-end-column="104" />
+        <state relative-caret-position="97">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/controller/DemoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/repository/maven/org/springframework/spring-context/5.0.5.RELEASE/spring-context-5.0.5.RELEASE-sources.jar!/org/springframework/context/annotation/ComponentScan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comsumer/src/main/java/com/ping/chen/dubbo/comsumer/ConsumerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comsumer/src/main/resources/consumer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/repository/maven/com/alibaba/dubbo/2.6.1/dubbo-2.6.1-sources.jar!/com/alibaba/dubbo/config/annotation/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1279">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/provider/src/main/java/com/ping/chen/dubbo/provider/service/impl/DemoProviderImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="209">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1281,8 +1247,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/provider/src/main/resources/provider.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+        <state relative-caret-position="251">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>

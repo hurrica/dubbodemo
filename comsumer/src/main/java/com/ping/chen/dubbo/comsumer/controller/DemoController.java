@@ -1,12 +1,9 @@
 package com.ping.chen.dubbo.comsumer.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.alibaba.dubbo.rpc.RpcContext;
 import com.ping.chen.dubbo.provider.DemoProvider;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.concurrent.ExecutionException;
 
 /**
  * @Author chenping
@@ -19,8 +16,7 @@ public class DemoController {
     DemoProvider demoProvider;
 
     @RequestMapping("/demo")
-    public void demo() throws ExecutionException, InterruptedException {
-        demoProvider.sayHello("world");
-        System.out.println(">>>>>>>>>>" + RpcContext.getContext().getFuture().get());
+    public void demo() {
+        System.out.println(">>>>>>>>>>" + demoProvider.sayHello("world"));
     }
 }

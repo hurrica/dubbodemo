@@ -10,7 +10,7 @@ import java.io.IOException;
  * Created by ping.chen on 2018/7/1.
  */
 @SpringBootApplication
-@DubboComponentScan("com.ping.chen.META-INF.provider")
+@DubboComponentScan("com.ping.chen.dubbo.provider")
 public class ProviderApplication {
     public static void main(String[] args) throws IOException {
         SpringApplication.run(ProviderApplication.class, args);
