@@ -10,8 +10,11 @@
     <version>2.0-SNAPSHOT</version>
     <modules>
         <module>provider</module>
-        <module>comsumer</module>
+        <module>consumer</module>
         <module>service</module>
+        <module>fescardemo</module>
+        <module>business</module>
+        <module>test</module>
     </modules>
 
     <parent>
@@ -38,11 +41,7 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>dubbo</artifactId>
-            <version>2.6.1</version>
-        </dependency>
+
         <dependency>
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
@@ -77,6 +76,12 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.47</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.20</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="dubbo-demo-app"  />
+    <dubbo:registry address="zookeeper://172.16.90.196:2181" />
+    <dubbo:reference id="orderService" check="false" interface="com.ping.chen.dubbo.provider.fescar.OrderService"/>
+    <dubbo:reference id="storageService" check="false" interface="com.ping.chen.dubbo.provider.fescar.StorageService"/>
+
+    <bean id="business" class="com.ping.chen.fescar.demo.impl.BusinessServiceImpl">
+        <property name="orderService" ref="orderService"/>
+        <property name="storageService" ref="storageService"/>
+    </bean>
+    <bean class="com.alibaba.fescar.spring.annotation.GlobalTransactionScanner">
+        <constructor-arg value="dubbo-demo-app"/>
+        <constructor-arg value="my_test_tx_group"/>
+    </bean>
+
+</beans>
